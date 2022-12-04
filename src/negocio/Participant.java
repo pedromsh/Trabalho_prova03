@@ -39,4 +39,8 @@ public class Participant {
 		public void setScoreBoards(ArrayList<Integer> scoreBoards) {
 			this.scoreBoards = scoreBoards;
 		}
+		
+		public void quartersResult(String team, int counter) {
+			
+		}
 }

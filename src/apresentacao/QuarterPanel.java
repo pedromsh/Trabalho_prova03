@@ -44,7 +44,6 @@ public class QuarterPanel extends JPanel{
 			
 			field[0] = new JTextField(10);
 			add(field[0]);
-//			participant.getSoccerTeams().add(field[0].getText());
 			
 			scoreBoard = new JLabel("Placar:");
 			add(scoreBoard);

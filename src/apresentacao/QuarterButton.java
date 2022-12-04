@@ -6,6 +6,7 @@ import java.awt.event.ActionListener;
 import javax.swing.JButton;
 import javax.swing.JTextField;
 
+import negocio.Guess;
 import negocio.Participant;
 
 public class QuarterButton extends JButton implements ActionListener{
@@ -24,14 +25,16 @@ public class QuarterButton extends JButton implements ActionListener{
 		
 		//Metodo para pegar o evento do clique e abrir a janela das semifinais
 		public void actionPerformed(ActionEvent e) {
-			SemiFinals semiFinals = new SemiFinals(participant);
+			SemiFinals semiFinals = new SemiFinals(participant, field);
 			window.setVisible(false);
 			
 			for (int i = 0; i < field.length; i++) {
 				if(i % 2 == 0)
 					participant.getSoccerTeams().add(field[i].getText());
-				else
+				else {
 					participant.getScoreBoards().add(Integer.parseInt(field[i].getText()));
+				}
+					
 			}
 			
 		}
