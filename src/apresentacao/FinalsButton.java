@@ -21,6 +21,7 @@ public class FinalsButton extends JButton implements ActionListener{
 		
 		//Metodo para exibir a bandeira do campeao
 			public void actionPerformed(ActionEvent e) {
+				Champion champion = new Champion();
 				window.setVisible(false);
 				
 			}

@@ -16,7 +16,6 @@ public class QuarterPanel extends JPanel{
 		private JLabel scoreBoard;
 		private JLabel x;
 		private Participant participant;
-		private String assistant;
 		
 		//Metodo construtor
 		public QuarterPanel(Participant participant) {

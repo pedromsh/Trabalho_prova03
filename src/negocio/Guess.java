@@ -50,7 +50,7 @@ public class Guess {
 	}
 
 	//Metodo que a selecao campea de um palpite
-	public String Result() {
+	public String result() {
 		if(score1 > score2)
 			return team1;
 		else

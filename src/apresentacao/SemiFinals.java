@@ -35,7 +35,7 @@ public class SemiFinals extends JFrame{
 			add(semi, BorderLayout.CENTER);
 			
 			button = new JButton("Enviar");
-			SemiButton semiButton = new SemiButton(participant, this);
+			SemiButton semiButton = new SemiButton(participant, this, semi);
 			this.button.addActionListener(semiButton);
 			add(button, BorderLayout.SOUTH);
 			

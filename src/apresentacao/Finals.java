@@ -12,10 +12,12 @@ public class Finals extends JFrame{
 	//Atributos 
 		private Participant participant;
 		private JButton button;
+		private SemiPanel semi;
 			
 		//Metodo cosntrutor
-		public Finals(Participant participant) {
+		public Finals(Participant participant, SemiPanel semi) {
 			this.participant = participant;
+			this.semi = semi;
 			
 			setSize(800, 800);
 			setTitle("Final");
@@ -28,7 +30,7 @@ public class Finals extends JFrame{
 		public void organizeLayout() {
 			setLayout(new BorderLayout());
 			
-			FinalsPanel finals = new FinalsPanel(participant);
+			FinalsPanel finals = new FinalsPanel(participant, semi);
 			add(finals, BorderLayout.CENTER);
 			
 			button = new JButton("Enviar");
