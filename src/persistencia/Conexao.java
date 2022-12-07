@@ -11,7 +11,7 @@ public class Conexao {
 	public Conexao() {
 
 		this.host = "localhost";
-		this.banco = "tecprog2022";
+		this.banco = "prova";
 		this.usuario = "root";
 		this.senha = "";
 	}
@@ -22,7 +22,7 @@ public class Conexao {
 		try {
 			return DriverManager.getConnection(url, usuario, senha);
 		} catch (SQLException ex) {
-			System.out.println("Conexão com MYSQL não realizada");
+			System.out.println("Conexï¿½o com MYSQL nï¿½o realizada");
 			ex.printStackTrace();
 		}
 		return null;

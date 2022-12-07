@@ -7,13 +7,17 @@ import javax.swing.JButton;
 
 public class ShowButton extends JButton implements ActionListener{
 
-	public ShowButton() {
-		
+	//Atributos
+	private Window window;
+	
+	//Metodo construtor
+	public ShowButton(Window window) {
+		this.window = window;
 	}
 
-	@Override
+	//Metodo que captura o clique
 	public void actionPerformed(ActionEvent e) {
-		System.out.println("oi");
-		
+		ShowWindow ShowWindow = new ShowWindow();
+		window.setVisible(false);
 	}
 }

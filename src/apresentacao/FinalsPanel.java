@@ -61,4 +61,30 @@ public class FinalsPanel extends JPanel{
 			scoreField[1] = new JTextField(5);
 			add(scoreField[1]);
 		}
+
+		//Metodos getters and setters
+		public Guess getG1() {
+			return g1;
+		}
+
+		public void setG1(Guess g1) {
+			this.g1 = g1;
+		}
+
+		public Guess getG2() {
+			return g2;
+		}
+
+		public void setG2(Guess g2) {
+			this.g2 = g2;
+		}
+
+		public JTextField[] getScoreField() {
+			return scoreField;
+		}
+
+		public void setScoreField(JTextField[] scoreField) {
+			this.scoreField = scoreField;
+		}
+		
 }

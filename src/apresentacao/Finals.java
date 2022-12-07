@@ -34,7 +34,7 @@ public class Finals extends JFrame{
 			add(finals, BorderLayout.CENTER);
 			
 			button = new JButton("Enviar");
-			FinalsButton finalButton = new FinalsButton(participant, this);
+			FinalsButton finalButton = new FinalsButton(participant, this, finals);
 			button.addActionListener(finalButton);
 			add(button, BorderLayout.SOUTH);
 			

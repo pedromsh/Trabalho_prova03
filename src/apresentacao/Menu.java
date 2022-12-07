@@ -33,7 +33,7 @@ public class Menu extends JPanel{
 		add(registration);
 		
 		show = new JButton("Mostrar Botões Cadastrados");
-		ShowButton showButton = new ShowButton();
+		ShowButton showButton = new ShowButton(window);
 		show.addActionListener(showButton);
 		add(show);
 		
