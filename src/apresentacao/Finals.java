@@ -19,7 +19,7 @@ public class Finals extends JFrame{
 			this.participant = participant;
 			this.semi = semi;
 			
-			setSize(800, 800);
+			setSize(300, 300);
 			setTitle("Final");
 			setDefaultCloseOperation(EXIT_ON_CLOSE);
 			organizeLayout();

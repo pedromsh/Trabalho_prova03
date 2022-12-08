@@ -5,7 +5,9 @@ import java.awt.event.ActionListener;
 
 import javax.swing.JButton;
 
+import negocio.Guess;
 import negocio.Participant;
+import persistencia.SweepstakesDAO;
 
 public class FinalsButton extends JButton implements ActionListener{
 
@@ -13,12 +15,15 @@ public class FinalsButton extends JButton implements ActionListener{
 		private Participant participant;
 		private Finals window;
 		private FinalsPanel finals;
+		private Guess championGuess;
 			
 		//Metodo para criar um botao e adicionar o action listener
 		public FinalsButton(Participant participant, Finals window, FinalsPanel finals) {
 			this.participant = participant;
 			this.window = window;
 			this.finals = finals;
+			
+			
 		}
 		
 		//Metodo para adicionar as selecoes que avancaram de fase ao arraylist de selecoes da classe participante
@@ -36,12 +41,20 @@ public class FinalsButton extends JButton implements ActionListener{
 		
 		//Metodo para exibir a bandeira do campeao
 			public void actionPerformed(ActionEvent e) {
-				Champion champion = new Champion(finals);
+				championGuess = new Guess(finals.getG1().result(), Integer.parseInt(finals.getScoreField()[0].getText()), 
+						finals.getG2().result(), Integer.parseInt(finals.getScoreField()[1].getText()));
+				
+				Champion champion = new Champion(finals, championGuess);
 				
 				window.setVisible(false);
 				
 				addStringsToArrayList();
 				
 				addScoreToArrayList();
+				
+				participant.getSoccerTeams().add(championGuess.result());
+				
+				SweepstakesDAO s = new SweepstakesDAO();
+				s.inserir(participant);
 			}
 }

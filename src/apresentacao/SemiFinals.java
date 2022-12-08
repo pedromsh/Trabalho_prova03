@@ -10,7 +10,7 @@ import negocio.Participant;
 
 public class SemiFinals extends JFrame{
 
-	//Atributos 
+	    //Atributos 
 		private Participant participant;
 		private JButton button;
 		private JTextField field[];
@@ -20,7 +20,7 @@ public class SemiFinals extends JFrame{
 			this.participant = participant;
 			this.field = field;
 			
-			setSize(800, 800);
+			setSize(800, 400);
 			setTitle("Semifinal");
 			setDefaultCloseOperation(EXIT_ON_CLOSE);
 			organizeLayout();
@@ -35,8 +35,14 @@ public class SemiFinals extends JFrame{
 			add(semi, BorderLayout.CENTER);
 			
 			button = new JButton("Enviar");
+			
+			
 			SemiButton semiButton = new SemiButton(participant, this, semi);
+			
+			
 			this.button.addActionListener(semiButton);
+			
+			
 			add(button, BorderLayout.SOUTH);
 			
 		}

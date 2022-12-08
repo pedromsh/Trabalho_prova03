@@ -36,7 +36,7 @@ public class QuarterPanel extends JPanel{
 		//Metodo para deixar os elementos do painel posicionados da forma escolhida
 		public void organizePanel() {
 			
-			setLayout(new GridLayout(4, 9, 5, 5));
+			setLayout(new GridLayout(4, 9, 15, 15));
 			
 			team = new JLabel("Seleção:");
 			add(team);

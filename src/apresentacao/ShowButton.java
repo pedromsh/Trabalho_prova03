@@ -17,7 +17,7 @@ public class ShowButton extends JButton implements ActionListener{
 
 	//Metodo que captura o clique
 	public void actionPerformed(ActionEvent e) {
-		ShowWindow ShowWindow = new ShowWindow();
+		TableWindow table = new TableWindow();
 		window.setVisible(false);
 	}
 }

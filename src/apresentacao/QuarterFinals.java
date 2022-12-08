@@ -17,7 +17,7 @@ public class QuarterFinals extends JFrame{
 		public QuarterFinals(Participant participant) {
 			this.participant = participant;
 			
-			setSize(800, 800);
+			setSize(800, 600);
 			setTitle("Quartas de Final");
 			setDefaultCloseOperation(EXIT_ON_CLOSE);
 			organizeLayout();

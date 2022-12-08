@@ -14,10 +14,12 @@ public class Champion extends JFrame{
 	//Atributos
 	private FinalsPanel finals;
 	private JLabel label;
+	private Guess champion;
 	
 	//Metodo construtor
-	public Champion(FinalsPanel finals) {
+	public Champion(FinalsPanel finals, Guess champion) {
 		this.finals = finals;
+		this.champion = champion;
 		
 		setSize(400, 400);
 		setDefaultCloseOperation(EXIT_ON_CLOSE);
@@ -30,10 +32,8 @@ public class Champion extends JFrame{
 		setVisible(true);
 	}
 	
+	//Metodo que exibe a bandeira do campeao na tela
 	public void championBackground() {
-		Guess champion = new Guess(finals.getG1().result(), Integer.parseInt(finals.getScoreField()[0].getText()), 
-				finals.getG2().result(), Integer.parseInt(finals.getScoreField()[1].getText()));
-		
 		switch(champion.result()) {
 		case "bra":
 			label.setIcon(new ImageIcon(new ImageIcon("img/Brasil.png").getImage().getScaledInstance(50, 50, Image.SCALE_SMOOTH)));

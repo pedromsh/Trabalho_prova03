@@ -14,7 +14,7 @@ public class SemiButton extends JButton implements ActionListener{
 		private SemiFinals window;
 		private SemiPanel semi;
 		
-		//Metodo para criar o botao e adicionar o action listener
+		//Metodo construtor
 		public SemiButton(Participant participant, SemiFinals window, SemiPanel semi) {
 			this.participant = participant;
 			this.window = window;
@@ -35,7 +35,7 @@ public class SemiButton extends JButton implements ActionListener{
 			window.setVisible(false);
 			
 			for (int i = 0; i < semi.getScoreField().length; i++) {
-				participant.getScoreBoards().add(Integer.parseInt(semi.getScoreField()[i].getText()));
+				participant.getScoreBoards().add(Integer.valueOf(semi.getScoreField()[i].getText()));
 			}
 			
 			addStringsToArrayList();
