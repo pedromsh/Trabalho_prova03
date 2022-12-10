@@ -11,7 +11,7 @@ import negocio.Participant;
 
 public class SemiPanel extends JPanel{
 
-	//Atributos
+	    //Atributos
 		private JTextField scoreField[];//array de JTextField do SemiPanel que vai receber os placares
 		private JLabel team;
 		private JLabel scoreBoard;
@@ -40,6 +40,7 @@ public class SemiPanel extends JPanel{
 				
 				g1 = new Guess(field[0].getText(), Integer.parseInt(field[1].getText()), field[2].getText(), 
 						Integer.parseInt(field[3].getText()));
+				
 				JLabel label1 = new JLabel(g1.result());
 				add(label1);
 				
@@ -57,6 +58,7 @@ public class SemiPanel extends JPanel{
 				
 				g2 = new Guess(field[4].getText(), Integer.parseInt(field[5].getText()), field[6].getText(), 
 						Integer.parseInt(field[7].getText()));
+				
 				JLabel label2 = new JLabel(g2.result());
 				add(label2);
 				
@@ -71,6 +73,7 @@ public class SemiPanel extends JPanel{
 				
 				g3 = new Guess(field[8].getText(), Integer.parseInt(field[9].getText()), field[10].getText(), 
 						Integer.parseInt(field[11].getText()));
+				
 				JLabel label3 = new JLabel(g3.result());
 				add(label3);
 				
@@ -87,6 +90,7 @@ public class SemiPanel extends JPanel{
 				add(team);
 				g4 = new Guess(field[12].getText(), Integer.parseInt(field[13].getText()), field[14].getText(), 
 						Integer.parseInt(field[15].getText()));
+
 				JLabel label4 = new JLabel(g4.result());
 				add(label4);
 				

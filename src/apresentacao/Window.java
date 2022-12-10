@@ -4,6 +4,7 @@ import javax.swing.JFrame;
 
 public class Window extends JFrame{
 
+	//Metodo construtor
 	public Window() {
 		setSize(600, 600);
 		setDefaultCloseOperation(DISPOSE_ON_CLOSE);
@@ -12,6 +13,7 @@ public class Window extends JFrame{
 		setVisible(true);
 	}
 	
+	//Metodo para instanciar o menu e adicionar ao frame
 	public void organizeLayout() {
 		Menu menu = new Menu(this);
 		add(menu);

@@ -4,7 +4,7 @@ import javax.swing.JFrame;
 
 public class NameWindow extends JFrame{
 
-	//Metodo construtor
+	    //Metodo construtor
 		public NameWindow() {
 			setSize(800, 200);
 			setTitle("Informação do participante");

@@ -11,7 +11,7 @@ import negocio.Participant;
 
 public class FinalsPanel extends JPanel{
 
-	//Atributos
+	    //Atributos
 		private JTextField scoreField[];
 		private JLabel team;
 		private JLabel scoreBoard;
@@ -38,6 +38,7 @@ public class FinalsPanel extends JPanel{
 			
 			g1 = new Guess(semi.getG1().result(), Integer.parseInt(semi.getScoreField()[0].getText()), semi.getG2().result(), 
 					Integer.parseInt(semi.getScoreField()[1].getText()));
+			
 			JLabel label1 = new JLabel(g1.result());
 			add(label1);
 			
@@ -55,6 +56,7 @@ public class FinalsPanel extends JPanel{
 			
 			g2 = new Guess(semi.getG3().result(), Integer.parseInt(semi.getScoreField()[2].getText()), semi.getG4().result(), 
 					Integer.parseInt(semi.getScoreField()[3].getText()));
+			
 			JLabel label2 = new JLabel(g2.result());
 			add(label2);
 			

@@ -9,7 +9,7 @@ import negocio.Participant;
 
 public class Finals extends JFrame{
 
-	//Atributos 
+	    //Atributos 
 		private Participant participant;
 		private JButton button;
 		private SemiPanel semi;
@@ -19,7 +19,7 @@ public class Finals extends JFrame{
 			this.participant = participant;
 			this.semi = semi;
 			
-			setSize(300, 300);
+			setSize(600, 300);
 			setTitle("Final");
 			setDefaultCloseOperation(EXIT_ON_CLOSE);
 			organizeLayout();

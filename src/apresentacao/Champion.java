@@ -36,28 +36,28 @@ public class Champion extends JFrame{
 	public void championBackground() {
 		switch(champion.result()) {
 		case "bra":
-			label.setIcon(new ImageIcon(new ImageIcon("img/Brasil.png").getImage().getScaledInstance(50, 50, Image.SCALE_SMOOTH)));
+			label.setIcon(new ImageIcon(new ImageIcon("img/Brasil.jpg").getImage().getScaledInstance(400, 400, Image.SCALE_SMOOTH)));
 			break;
 		case "hol":
-			label.setIcon(new ImageIcon(new ImageIcon("img/paises baixos.png").getImage().getScaledInstance(50, 50, Image.SCALE_SMOOTH)));
+			label.setIcon(new ImageIcon(new ImageIcon("img/Holanda.jpg").getImage().getScaledInstance(400, 400, Image.SCALE_SMOOTH)));
 			break;
 		case "arg":
-			label.setIcon(new ImageIcon(new ImageIcon("img/Argentina.png").getImage().getScaledInstance(50, 50, Image.SCALE_SMOOTH)));
+			label.setIcon(new ImageIcon(new ImageIcon("img/Argentina.jpg").getImage().getScaledInstance(400, 400, Image.SCALE_SMOOTH)));
 			break;
 		case "cro":
-			label.setIcon(new ImageIcon(new ImageIcon("img/Croacia.png").getImage().getScaledInstance(50, 50, Image.SCALE_SMOOTH)));
+			label.setIcon(new ImageIcon(new ImageIcon("img/Croacia.jpg").getImage().getScaledInstance(400, 400, Image.SCALE_SMOOTH)));
 			break;
 		case "fra":
-			label.setIcon(new ImageIcon(new ImageIcon("img/Franca.png").getImage().getScaledInstance(50, 50, Image.SCALE_SMOOTH)));
+			label.setIcon(new ImageIcon(new ImageIcon("img/Franca.jpg").getImage().getScaledInstance(400, 400, Image.SCALE_SMOOTH)));
 			break;
 		case "ing":
-			label.setIcon(new ImageIcon(new ImageIcon("img/inglaterra.png").getImage().getScaledInstance(50, 50, Image.SCALE_SMOOTH)));
+			label.setIcon(new ImageIcon(new ImageIcon("img/Inglaterra.jpg").getImage().getScaledInstance(400, 400, Image.SCALE_SMOOTH)));
 			break;
 		case "mar":
-			label.setIcon(new ImageIcon(new ImageIcon("img/Marrocos.png").getImage().getScaledInstance(50, 50, Image.SCALE_SMOOTH)));
+			label.setIcon(new ImageIcon(new ImageIcon("img/Marrocos.jpg").getImage().getScaledInstance(400, 400, Image.SCALE_SMOOTH)));
 			break;
 		case "por":
-			label.setIcon(new ImageIcon(new ImageIcon("img/Portugal.png").getImage().getScaledInstance(50, 50, Image.SCALE_SMOOTH)));
+			label.setIcon(new ImageIcon(new ImageIcon("img/Portugal.jpg").getImage().getScaledInstance(400, 400, Image.SCALE_SMOOTH)));
 			break;
 		
 		}

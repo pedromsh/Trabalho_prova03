@@ -10,7 +10,7 @@ import negocio.Participant;
 
 public class QuarterPanel extends JPanel{
 
-	//Atributos
+	    //Atributos
 		private JTextField field[];
 		private JLabel team;
 		private JLabel scoreBoard;

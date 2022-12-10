@@ -9,7 +9,7 @@ import negocio.Participant;
 
 public class QuarterFinals extends JFrame{
 
-	//Atributos
+	    //Atributos
 		private Participant participant;
 		private JButton button;
 		

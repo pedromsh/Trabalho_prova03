@@ -4,7 +4,7 @@ import java.util.ArrayList;
 
 public class Participant {
 
-	//Atributos
+	    //Atributos
 		private String name;
 		private ArrayList<String> soccerTeams;
 		private ArrayList<Integer> scoreBoards;
@@ -40,7 +40,4 @@ public class Participant {
 			this.scoreBoards = scoreBoards;
 		}
 		
-		public void quartersResult(String team, int counter) {
-			
-		}
 }

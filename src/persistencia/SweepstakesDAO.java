@@ -6,11 +6,11 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
 
-import negocio.Aluno;
 import negocio.Participant;
 
 public class SweepstakesDAO {
 
+	//Metodo para inserir os dados no banco de dados
 	public void inserir(Participant p) {
 		try {
 			Connection conexao = new Conexao().getConexao();
@@ -57,6 +57,7 @@ public class SweepstakesDAO {
 		}
 	}
 	
+	//Metodo para puxar os dados do banco de dados
 	public ArrayList<Participant> listar() {
 		ArrayList<Participant> aux = new ArrayList<Participant>();
 		try {

@@ -7,13 +7,8 @@ import javax.swing.JButton;
 
 public class ExportButton extends JButton implements ActionListener{
 
-	public ExportButton() {
-		
-	}
-
 	@Override
 	public void actionPerformed(ActionEvent e) {
-		System.out.println("Clicado");
 		
 	}
 }

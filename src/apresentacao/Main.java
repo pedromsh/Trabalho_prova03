@@ -1,6 +1,8 @@
 package apresentacao;
 
+import negocio.Participant;
 import persistencia.Conexao;
+import persistencia.SweepstakesDAO;
 
 public class Main {
 

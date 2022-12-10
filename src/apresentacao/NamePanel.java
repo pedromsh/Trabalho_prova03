@@ -11,7 +11,7 @@ import negocio.Participant;
 
 public class NamePanel extends JPanel{
 
-	//Atributos
+	    //Atributos
 		private JTextField field;
 		private JButton button;
 		private JLabel label;

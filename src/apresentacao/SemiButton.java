@@ -9,7 +9,7 @@ import negocio.Participant;
 
 public class SemiButton extends JButton implements ActionListener{
 
-	//Atributos
+	    //Atributos
 		private Participant participant;
 		private SemiFinals window;
 		private SemiPanel semi;
@@ -29,6 +29,7 @@ public class SemiButton extends JButton implements ActionListener{
 			participant.getSoccerTeams().add(semi.getG4().result());
 		}
 		
+		//Metodo para capturar o evento de clique
 		public void actionPerformed(ActionEvent e) {
 			Finals finals = new Finals(participant, semi);
 			

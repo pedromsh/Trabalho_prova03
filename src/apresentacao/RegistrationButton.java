@@ -9,11 +9,13 @@ public class RegistrationButton extends JButton implements ActionListener{
 
 private Window window;
 	
+    //Metodo construtor
 	public RegistrationButton(Window window) {
 		this.window = window;
 		
 	}
 	
+	//Metodo para capturar o evento de clique
 	public void actionPerformed(ActionEvent e) {
 		NameWindow nameWindow = new NameWindow();
 		window.setVisible(false);

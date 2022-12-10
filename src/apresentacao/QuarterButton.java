@@ -11,7 +11,7 @@ import negocio.Participant;
 
 public class QuarterButton extends JButton implements ActionListener{
 
-	//Atributos
+	    //Atributos
 		private Participant participant;
 		private QuarterFinals window;
 		private JTextField field[];

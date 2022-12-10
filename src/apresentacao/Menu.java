@@ -8,6 +8,7 @@ import javax.swing.JPanel;
 
 public class Menu extends JPanel{
 
+	//Atributos
 	private JButton registration;
 	private JButton show;
 	private JButton button;
@@ -15,11 +16,13 @@ public class Menu extends JPanel{
 	private JLabel label;
 	private Window window;
 	
+	//Metodo construtor
 	public Menu(Window window) {
 		this.window = window;
 		createButtons();
 	}
 	
+	//Metodo para criar os botoes do menu principal e organiza-los com grid layout
 	public void createButtons() {
 		setLayout(new GridLayout(5, 1, 10, 10));
 		

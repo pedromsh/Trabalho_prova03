@@ -11,7 +11,7 @@ import persistencia.SweepstakesDAO;
 
 public class FinalsButton extends JButton implements ActionListener{
 
-	//Atributos
+	    //Atributos
 		private Participant participant;
 		private Finals window;
 		private FinalsPanel finals;
